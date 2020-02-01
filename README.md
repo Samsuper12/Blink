@@ -1,8 +1,7 @@
 # Blink for OpenWallpaper
 
 Blink is simple [QOpenGL][qogl_context] scene for the [OpenWallpaper Plasma][wallpaper_plasma].
-Video demonstration: [YouTube][youtube_blink]
-[Reddit][reddit_page]
+Video demonstration: [YouTube][youtube_blink] | [Reddit][reddit_page]
 
 ![Blink preview image][preview_image]
 
