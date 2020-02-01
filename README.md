@@ -2,6 +2,7 @@
 
 Blink is simple [QOpenGL][qogl_context] scene for the [OpenWallpaper Plasma][wallpaper_plasma].
 Video demonstration: [YouTube][youtube_blink]
+[Reddit][reddit_page]
 
 ![Blink preview image][preview_image]
 
@@ -96,6 +97,7 @@ The `QOpenGLContext` can be taken from `QOpenGLContext::currentContext()`. See `
 
 * [OpenWallpaper Plasma][wallpaper_plasma]
 * [OpenWallpaper Manager][wallpaper_manager]
+* [Reddit][reddit_page]
 
 ## Author
 
@@ -114,3 +116,4 @@ Code given from [Qt Examples][qt_example].
 
 [wallpaper_manager]: https://github.com/Samsuper12/OpenWallpaper-Manager
 [wallpaper_plasma]: https://github.com/Samsuper12/OpenWallpaper-Plasma
+[reddit_page]: https://www.reddit.com/r/OpenWallpaper/comments/ex78il/blink/
