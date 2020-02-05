@@ -8,6 +8,13 @@ Blink::Blink()
     , onFocus(false)
 {
     currentSpeed = SPEED_ON_START;
+    values = {
+    		-1, -1,
+	    	1, -1,
+		-1, 1,
+		1, 1
+	     };	
+
 }
 
 Blink::~Blink()
@@ -57,13 +64,6 @@ void Blink::init(const std::string& dir, const std::vector<std::string>& params)
 
 void Blink::draw()
 {
-    float values[8] {
-        -1, -1,
-        1, -1,
-        -1, 1,
-        1, 1
-    };
-
     if (onFocus && CHECK_FOCUS) {
         updateSpeed(normalize(QCursor::pos().y()));
     }
@@ -77,7 +77,7 @@ void Blink::draw()
 
     flip ? step += currentSpeed : step -= currentSpeed;
 
-    shader->setAttributeArray(0, GL_FLOAT, values, 2);
+    shader->setAttributeArray(0, GL_FLOAT, values.data(), 2);
     shader->setUniformValue("t", step);
 
     functions->glClearColor(0.0, 0.0, 0.0, 1.0);

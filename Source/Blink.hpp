@@ -3,6 +3,8 @@
 
 #include <OpenWallpaper/QtOpenGL/abstract_render.hpp>
 
+#include <array>
+
 #include <QOpenGLContext>
 #include <QOpenGLFunctions>
 #include <QOpenGLShaderProgram>
@@ -41,6 +43,7 @@ private:
     float step;
     float currentSpeed;
     float lastMouseUpdate;
+    std::array<float, 8> values;
 
     bool flip;
     bool onFocus;
